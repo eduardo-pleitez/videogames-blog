@@ -1,0 +1,19 @@
+{
+  "name": "videogames-blog",
+  "version": "1.0.0",
+  "description": "Blog of videogames information.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/eduardo-pleitez/videogames-blog.git"
+  },
+  "author": "\"Eduardo Mejia Pleitez\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardo-pleitez/videogames-blog/issues"
+  },
+  "homepage": "https://github.com/eduardo-pleitez/videogames-blog#readme"
+}
