@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="/styles/mainStyles.css">
-  <script type="module" defer src="/javascript-files/main.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/mainStyles.css" />
+    <script type="module" defer src="/javascript-files/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Source+Sans+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <a href="index.html">Videogames blog</a>
+      </div>
+      <div class="nav-right">
+        <a href="index.html">Homepage</a>
+        <a href="#">Edit posts</a>
+      </div>
+    </nav>
 
-  <nav>
-    <div class="nav-left">
-      <a href="index.html">Videogames blog</a>
+    <div class="main-content">
+
+      <div class="search-game-section">
+        <input
+          type="search"
+          name="search-game-input"
+          id="search-game-input"
+          placeholder="Search a videogame..."
+        />
+        <input type="button" value="Search" id="search-game-button" />
+      </div>
+      
     </div>
-    <div class="nav-right">
-      <a href="index.html">Homepage</a>
-      <a href="#">Edit posts</a>
-    </div>
-  </nav>
-  
-  <div class="main-content">
-    <div class="search-game-section">
-      <input type="search" name="search-game-input" id="search-game-input" placeholder="search a videogame...">
-      <input type="button" value="Search" id="search-game-button">
-    </div>
-  </div>
-</body>
+  </body>
 </html>
