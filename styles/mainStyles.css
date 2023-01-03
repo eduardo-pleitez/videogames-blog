@@ -3,3 +3,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+nav{
+  display: flex;
+  align-items: center;
+  background-color: dodgerblue;
+  padding: 1rem 4rem;
+  color: white;
+}
+nav a{
+  color: white;
+  text-decoration: none;
+}
+.nav-left{
+  width: 50%;
+  font-size: 26px;
+}
+.nav-right{
+  width: 30%;
+  display: flex;
+  justify-content:space-evenly;
+  font-size: 20px;
+}
