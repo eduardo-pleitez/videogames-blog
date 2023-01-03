@@ -38,3 +38,26 @@ nav a:hover{
 .nav-right a {
    margin-right: 30px;
 }
+.main-content{
+  width: 60%;
+  margin: 3rem auto;
+}
+.search-game-section{
+  display: flex;
+  justify-content: center;
+}
+#search-game-input{
+  width: 350px;
+  font-size: 20px;
+  margin-right: 20px;
+  padding: 0 0.3rem;
+}
+#search-game-button{
+  font-size: 20px;
+  padding: 0.3rem 1rem;
+  background-color:dodgerblue;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
