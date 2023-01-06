@@ -61,3 +61,17 @@ nav a:hover{
   border: none;
   cursor: pointer;
 }
+#videogames-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 3rem 0 2rem;
+}
+.videogame-card{
+  color: white;
+  margin-bottom: 1rem;
+}
+.videogame-card img {
+  height: auto;
+  width: 100%;
+}
