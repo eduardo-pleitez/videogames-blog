@@ -7,7 +7,8 @@ async function getVideoGames() {
     const data = await response.json();
     displayData(data);
   } catch (err) {
-    console.log('Error:' + err);
+    console.log(err);
+    document.getElementById('videogames-section').innerHTML = `<h2>An error occurred. Please, refresh the page.</h2>`
   }
 }
 
