@@ -18,6 +18,9 @@ function displayData(data) {
       (element) =>
         `<div class="videogame-card">
           <img src=${element.thumbnail} alt=${element.title} />
+          <div class="overlay">
+            <p class="overlay-text">See full details</p>
+          </div>
         </div>`
     )
     .join('');

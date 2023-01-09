@@ -69,8 +69,36 @@ nav a:hover{
   margin: 3rem 0 2rem;
   color: white;
 }
+.videogame-card{
+  position: relative;
+}
 .videogame-card img {
   height: auto;
-  width: 100%;
+  max-width: 300px;
   margin: 0;
+  border-radius: 5px;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.8s ease;
+  background-color: dodgerblue;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.overlay-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+}
+
+.videogame-card:hover .overlay{
+  opacity: 1;
 }
