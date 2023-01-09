@@ -26,11 +26,11 @@ nav a:hover{
   cursor: pointer;
 }
 .nav-left{
-  width: 30%;
+  width: 35%;
   font-size: 26px;
 }
 .nav-right{
-  width: 30%;
+  width: 35%;
   display: flex;
   justify-content: flex-end;
   font-size: 20px;
@@ -39,7 +39,7 @@ nav a:hover{
    margin-right: 30px;
 }
 .main-content{
-  width: 60%;
+  width: 70%;
   margin: 3rem auto;
 }
 .search-game-section{
