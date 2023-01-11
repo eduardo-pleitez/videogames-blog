@@ -17,6 +17,7 @@ nav {
   background-color: #283138;
   padding: 1rem 0;
   color: white;
+  border-bottom: 1px solid lightgray;
 }
 nav a {
   color: white;
@@ -103,24 +104,23 @@ nav a:hover {
 .videogame-card:hover .overlay {
   opacity: 1;
 }
-.details-main-content {
-  display: flex;
-  justify-content: center;
-}
 .videogame-details {
-  max-width: 600px;
-  padding: 2rem;
-  background-color: white;
-  color: #283138;
+  width: 50%;
+  margin: 0 auto;
+  padding: 1rem 2rem 2rem;
+  background-color: #283138;
+  color: white;
   border-radius: 5px;
 }
 .videogame-details img {
   width: 100%;
-  margin: 0.5rem 0;
+  margin: 0.75rem 0;
 }
-.videogame-details h1{
+.videogame-details h1 {
+  color: white;
   margin-bottom: 0.5rem;
+  font-size: 36px;
 }
-.videogame-details div {
-  margin-left: 0.5rem;
+.videogame-details p {
+  font-size: 20px;
 }

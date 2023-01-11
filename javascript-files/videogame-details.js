@@ -8,7 +8,6 @@ async function getVideogameDetails() {
   try {
     const response = await fetch(`${API_URL}/videogames/${videogameId}`);
     const data = await response.json();
-    console.log(data);
     displayData(data);
   } catch (err) {
     console.log(err);
