@@ -103,3 +103,24 @@ nav a:hover {
 .videogame-card:hover .overlay {
   opacity: 1;
 }
+.details-main-content {
+  display: flex;
+  justify-content: center;
+}
+.videogame-details {
+  max-width: 600px;
+  padding: 2rem;
+  background-color: white;
+  color: #283138;
+  border-radius: 5px;
+}
+.videogame-details img {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+.videogame-details h1{
+  margin-bottom: 0.5rem;
+}
+.videogame-details div {
+  margin-left: 0.5rem;
+}
