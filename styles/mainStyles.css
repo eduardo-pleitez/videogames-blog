@@ -124,3 +124,8 @@ nav a:hover {
 .videogame-details p {
   font-size: 20px;
 }
+.error-message{
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+}
