@@ -1,21 +1,26 @@
 function displayData(data, type, elementsPerPage = 10, currentPage = 1) {
   if (type === 'videogames-section') {
-    const start = (currentPage - 1) * elementsPerPage;
-    const end = currentPage * elementsPerPage;
-    const currentElements = data.slice(start, end);
-    document.getElementById('videogames-section').innerHTML = currentElements
-      .map(
-        (element) =>
-          `<div class="videogame-card">
-            <img src=${element.thumbnail} alt=${element.title} />
-            <a href="videogame-details.html?id=${element.id}">
-              <div class="overlay">
-                <p class="overlay-text">See full details</p>
-              </div>
-            </a>
-          </div>`
-      )
-      .join('');
+    const videogamesSection = document.getElementById('videogames-section');
+    if(data.length > 0){
+      const start = (currentPage - 1) * elementsPerPage;
+      const end = currentPage * elementsPerPage;
+      const currentElements = data.slice(start, end);
+      videogamesSection.innerHTML = currentElements
+        .map(
+          (element) =>
+            `<div class="videogame-card">
+              <img src=${element.thumbnail} alt=${element.title} />
+              <a href="videogame-details.html?id=${element.id}">
+                <div class="overlay">
+                  <p class="overlay-text">See full details</p>
+                </div>
+              </a>
+            </div>`
+        )
+        .join('');
+    } else {
+      videogamesSection.innerHTML = '<h2>Results not found.</h2>';
+    }
   }
   
   if(type === 'videogame-details-section') {
