@@ -1,6 +1,9 @@
-function displayData(data, type) {
-  if(type === 'videogames-section'){
-    document.getElementById('videogames-section').innerHTML = data
+function displayData(data, type, elementsPerPage = 10, currentPage = 1) {
+  if (type === 'videogames-section') {
+    const start = (currentPage - 1) * elementsPerPage;
+    const end = currentPage * elementsPerPage;
+    const currentElements = data.slice(start, end);
+    document.getElementById('videogames-section').innerHTML = currentElements
       .map(
         (element) =>
           `<div class="videogame-card">
