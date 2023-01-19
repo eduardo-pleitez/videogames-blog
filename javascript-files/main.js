@@ -16,7 +16,7 @@ function addPagination() {
     paginationSection.innerHTML = pagesNumbers.map(
       (pageNumber) =>
         `<div class='pagination-button' onclick='changePage(${pageNumber})'>${pageNumber}</div>`
-    );
+    ).join('');
   } else {
     paginationSection.innerHTML = '';
   }
