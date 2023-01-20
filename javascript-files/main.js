@@ -15,17 +15,26 @@ function addPagination() {
   if (pagesNumbers.length > 1) {
     paginationSection.innerHTML = pagesNumbers.map(
       (pageNumber) =>
-        `<div class='pagination-button' onclick='changePage(${pageNumber})'>${pageNumber}</div>`
+        `<div class='pagination-button'>${pageNumber}</div>`
     ).join('');
+    const buttons = document.querySelectorAll('.pagination-button');
+    buttons.forEach(button => {
+      button.addEventListener('click', changePage);
+    });
+    document.querySelectorAll('.pagination-button')[0].click();
   } else {
     paginationSection.innerHTML = '';
   }
 }
 
-function changePage(pageNumber) {
-  displayData(data, 'videogames-section', elementsPerPage, pageNumber);
+function changePage(e) {
+  const buttons = document.querySelectorAll('.pagination-button');
+  buttons.forEach(button => {
+    button.className = 'pagination-button';
+  });
+  e.target.className += ' button-active';
+  displayData(data, 'videogames-section', elementsPerPage, e.target.innerText);
 }
-window.changePage = changePage;
 
 document
   .getElementById('search-game-button')

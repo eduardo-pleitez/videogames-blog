@@ -145,7 +145,7 @@ nav a:hover {
   cursor: pointer;
   border: 1px solid transparent;
 }
-.pagination-button:hover{
+.pagination-button:hover, .button-active{
   background-color: #283138;
   border: 1px solid white;
 }
