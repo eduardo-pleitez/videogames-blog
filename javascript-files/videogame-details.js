@@ -4,5 +4,5 @@ import displayData from './displayData.js';
 
 const videogameId = new URLSearchParams(window.location.search).get('id');
 
-const data = await getData(`${API_URL}/videogames/${videogameId}`);
+const data = await getData(`${API_URL}/videogames/${videogameId}`, 'videogame-details-section');
 displayData(data, 'videogame-details-section');

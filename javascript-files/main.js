@@ -5,7 +5,7 @@ import displayData from './displayData.js';
 const elementsPerPage = 10;
 const currentPage = 1;
 
-let data = await getData(`${API_URL}/videogames`);
+let data = await getData(`${API_URL}/videogames`, 'videogames-section');
 displayData(data, 'videogames-section', elementsPerPage, currentPage);
 addPagination();
 function addPagination() {

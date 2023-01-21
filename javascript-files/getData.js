@@ -1,4 +1,4 @@
-async function getData(url) {
+async function getData(url, type) {
   try {
     const response = await fetch(url);
     const data = await response.json();
