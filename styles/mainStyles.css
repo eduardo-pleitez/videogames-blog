@@ -104,6 +104,11 @@ nav a:hover {
 .videogame-card:hover .overlay {
   opacity: 1;
 }
+.loading-message{
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+}
 .videogame-details {
   width: 50%;
   margin: 0 auto;
