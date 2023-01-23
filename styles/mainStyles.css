@@ -109,6 +109,9 @@ nav a:hover {
   text-align: center;
   margin-top: 2rem;
 }
+#videogame-details-section {
+  padding: 3rem 0;
+}
 .videogame-details {
   width: 50%;
   margin: 0 auto;
@@ -125,9 +128,20 @@ nav a:hover {
   color: white;
   margin-bottom: 0.5rem;
   font-size: 36px;
+  border-bottom: 1px solid white;
 }
 .videogame-details p {
   font-size: 20px;
+}
+.videogame-details-button {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 2rem;
+  font-size: 20px;
+  padding: 0.5rem;
+  background-color:dodgerblue;
+  color: white;
+  cursor: pointer;
 }
 .error-message{
   color: white;

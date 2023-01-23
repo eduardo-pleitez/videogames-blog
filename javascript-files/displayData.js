@@ -32,6 +32,9 @@ function displayData(data, pageSection, elementsPerPage = 10, currentPage = 1) {
       <p><b>Release date:</b> ${data.release_date}</p>
       <img src=${data.thumbnail} alt=${data.title} />
       <p>${data.short_description}}</p>
+      <a href="index.html" class="videogame-details-button">
+        <div>&#8617; Return to gamelist</div>
+      </a>
     </div>`;
   }
 }
