@@ -40,6 +40,13 @@ nav a:hover {
 .nav-right a {
   margin-right: 30px;
 }
+.loading-message, .error-message{
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Main page styles */
 .main-content {
   width: 70%;
   margin: 3rem auto;
@@ -100,15 +107,31 @@ nav a:hover {
   color: white;
   font-size: 20px;
 }
-
 .videogame-card:hover .overlay {
   opacity: 1;
 }
-.loading-message{
-  color: white;
-  text-align: center;
-  margin-top: 2rem;
+#pagination-section{
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 3rem;
 }
+.pagination-button{
+  display: block;
+  font-size: 20px;
+  padding: 0.8rem;
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.pagination-button:hover, .button-active{
+  background-color: #283138;
+  border: 1px solid white;
+}
+
+/* Videogame details page styles*/
 #videogame-details-section {
   padding: 3rem 0;
 }
@@ -142,29 +165,4 @@ nav a:hover {
   background-color:dodgerblue;
   color: white;
   cursor: pointer;
-}
-.error-message{
-  color: white;
-  text-align: center;
-  margin-top: 2rem;
-}
-#pagination-section{
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-top: 3rem;
-}
-.pagination-button{
-  display: block;
-  font-size: 20px;
-  padding: 0.8rem;
-  color: white;
-  background-color: dodgerblue;
-  border-radius: 5px;
-  cursor: pointer;
-  border: 1px solid transparent;
-}
-.pagination-button:hover, .button-active{
-  background-color: #283138;
-  border: 1px solid white;
 }
