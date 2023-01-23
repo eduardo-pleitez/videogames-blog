@@ -1,6 +1,6 @@
-function displayData(data, type, elementsPerPage = 10, currentPage = 1) {
-  if (type === 'videogames-section') {
-    const videogamesSection = document.getElementById('videogames-section');
+function displayData(data, pageSection, elementsPerPage = 10, currentPage = 1) {
+  if (pageSection === 'videogames-section') {
+    const videogamesSection = document.getElementById(pageSection);
     if(data.length > 0){
       const start = (currentPage - 1) * elementsPerPage;
       const end = currentPage * elementsPerPage;
@@ -23,8 +23,8 @@ function displayData(data, type, elementsPerPage = 10, currentPage = 1) {
     }
   }
   
-  if(type === 'videogame-details-section') {
-    document.getElementById('videogame-details-section').innerHTML = 
+  if(pageSection === 'videogame-details-section') {
+    document.getElementById(pageSection).innerHTML = 
     `<div class="videogame-details">
       <h1>${data.title}</h1>
       <p><b>Platform:</b> ${data.platform}</p>

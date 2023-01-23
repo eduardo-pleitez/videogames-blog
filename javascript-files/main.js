@@ -4,9 +4,10 @@ import displayData from './displayData.js';
 
 const elementsPerPage = 10;
 const currentPage = 1;
+const pageSection = 'videogames-section';
 
-let data = await getData(`${API_URL}/videogames`, 'videogames-section');
-displayData(data, 'videogames-section', elementsPerPage, currentPage);
+let data = await getData(`${API_URL}/videogames`, pageSection);
+displayData(data, pageSection, elementsPerPage, currentPage);
 addPagination();
 function addPagination() {
   const totalPages = Math.ceil(data.length / elementsPerPage);
@@ -33,7 +34,7 @@ function changePage(e) {
     button.className = 'pagination-button';
   });
   e.target.className += ' button-active';
-  displayData(data, 'videogames-section', elementsPerPage, e.target.innerText);
+  displayData(data, pageSection, elementsPerPage, e.target.innerText);
 }
 
 document
@@ -49,6 +50,6 @@ async function searchData() {
   } else {
     data = await getData(`${API_URL}/videogames`);
     addPagination();
-    displayData(data, 'videogames-section', elementsPerPage, currentPage);
+    displayData(data, pageSection, elementsPerPage, currentPage);
   }
 }
