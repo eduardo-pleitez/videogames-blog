@@ -27,6 +27,7 @@ function displayData(data, pageSection, elementsPerPage = 10, currentPage = 1) {
     document.getElementById(pageSection).innerHTML = 
     `<div class="videogame-details">
       <h1>${data.title}</h1>
+      <p><b>Genre:</b> ${data.genre}</p>
       <p><b>Platform:</b> ${data.platform}</p>
       <p><b>Publisher:</b> ${data.publisher}</p>
       <p><b>Release date:</b> ${data.release_date}</p>
